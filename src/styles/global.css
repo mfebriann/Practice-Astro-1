@@ -1,1 +1,19 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme inline {
+  --font-poppins: var(--font-poppins);
+}
+
+@theme {
+  --color-page: #030e21;
+  --color-logo: #e5e5e5;
+  --color-logodot: #f8e7a1;
+  --color-bg1: #4f349f;
+  --color-bg2: #2f45bc;
+}
+
+@layer components {
+  .custom-container {
+    @apply container mx-auto px-3;
+  }
+}
